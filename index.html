@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<title>SAMUEL MUGA PORTFOLIO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{background-color:rgb(204, 255, 255); }
+body,h1,h2,h3 {font-family: "Roboto Condensed", Light 300, sans serif }
+h1 {letter-spacing: 5px}
+w3-row-padding img {margin-bottom: 12px}
+
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+<body>
+
+<!-- Navigation Bar -->
+<div>
+  <div class="w3-bar w3-indigo w3-wide">
+    <a href="index.html" class="w3-bar-item w3-button"><span class="w3-padding w3-white w3-opacity-min">SAMUEL</span></a>
+    <a href="Contact Me.html" class="w3-bar-item w3-button w3-right w3-hide-small">Contact Me</a>
+    <a href="Projects.html" class="w3-bar-item w3-button w3-right w3-hide-small">Projects</a>
+    <a href="About.html" class="w3-bar-item w3-button w3-right w3-hide-small">About</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <div id="demo" class="w3-bar-block w3-indigo w3-hide w3-hide-large w3-hide-medium">
+    <a href="About.html" class="w3-bar-item w3-button">About</a>
+    <a href="Projects.html" class="w3-bar-item w3-button">Projects</a>
+    <a href="Contact Me.html" class="w3-bar-item w3-button">Contact Me</a>
+  </div>
+</div>
+
+<!-- Header -->
+<div class="w3-display-container w3-bottom-padding-32 w3-content w3-wide" style="max-width:1500px;" id="home">
+ <img class="w3-image w3-round" src="Photo 3.jpg" alt="Header Image" width="1500" height="800">
+ <h1 class="w3-display-middle w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Portfolio</b></span></h1>
+</div>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content w3-padding-32" style="max-width:1500px">
+  <div class="w3-padding-32 w3-container w3-black w3-content w3-center">
+    <h1><b>SAMUEL MUGA</b></h1>
+    <h1 class="w3-xlarge">Mechatronic Engineer</h1>
+  </div>
+  <div class="w3-container w3-padding-32">
+    <p class="w3-large w3-center"><b>Welcome to my website portfolio! Here, you will get to know who I am, my aspirations and projects that I have done.</b></p>
+  </div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img class="w3-image w3-round" src="Robotic Car.jpg" style="width:100%">
+      <div class="text w3-text-black">An Obstacle Avoiding Car Prototype</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="w3-image w3-round" src="Arduino.jpg" style="width:100%">
+      <div class="text w3-text-black">An Arduino Mega 2560, LCD display and a NodeMCU</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="w3-image w3-round" src="L9110 Fan Module.jpg" style="width:100%">
+      <div class="text w3-text-black">An L9110 Fan Module</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img class="w3-image w3-round" src="Tags.jpg" style="width:100%">
+      <div class="text w3-text-black">RFID Tags</div>
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span> 
+  </div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+  <!-- Footer Section -->
+  <footer class="w3-center w3-light-grey">
+    <p class="w3-text-black"><b>Powered by the great Samuel Muga</b></p>
+  </footer>
+</body>
+</html>

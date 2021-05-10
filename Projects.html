@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<title>Projects</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Condensed">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{background-color:rgb(204, 255, 255); }
+body,h1,h2,h3 {font-family: "Roboto Condensed", Light 300, sans serif }
+h1 {letter-spacing: 5px}
+w3-row-padding img {margin-bottom: 12px}
+</style>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+<body>
+
+<!-- Navigation Bar -->
+<div>
+  <div class="w3-bar w3-indigo w3-wide">
+    <a href="index.html" class="w3-bar-item w3-button"><span class="w3-padding w3-white w3-opacity-min">SAMUEL</span></a>
+    <a href="Contact Me.html" class="w3-bar-item w3-button w3-right w3-hide-small">Contact Me</a>
+    <a href="Projects.html" class="w3-bar-item w3-button w3-right w3-hide-small">Projects</a>
+    <a href="About.html" class="w3-bar-item w3-button w3-right w3-hide-small">About</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <div id="demo" class="w3-bar-block w3-indigo w3-hide w3-hide-large w3-hide-medium">
+    <a href="About.html" class="w3-bar-item w3-button">About</a>
+    <a href="Projects.html" class="w3-bar-item w3-button">Projects</a>
+    <a href="Contact Me.html" class="w3-bar-item w3-button">Contact Me</a>
+  </div>
+</div>
+
+<!-- Header -->
+<div class="w3-display-container w3-bottom-padding-32 w3-content w3-wide" style="max-width:1500px;" id="home">
+ <img class="w3-image w3-round" src="Photo 3.jpg" alt="Header Image" width="1500" height="800">
+ <h1 class="w3-display-middle w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Projects</b></span></h1>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Projects Section -->
+ <div class="w3-container w3-padding-32" id="Projects">
+    <h1 class="w3-border-bottom w3-border-red w3-padding-16 w3-text-red"><b>Projects</b></h2>
+    <p class="w3-large">This is a section that contains all of the projects that i undertook at Gearbox Kenya and any other future projects that I might do. They involve the use of different micro-controllers such as the NodeMCU and the Arduino, different sensors such as the Soil Moisture Sensor, DHT11 Temperature and Humidity Sensor and Big Sound Sensor, and actuators such as the DC Motor. The repositories in this section contain documentations, flowcharts, fritzing files and videos of the projects.</p>
+
+    <div>
+      <h2 class="w3-border-bottom w3-border-grey w3-padding"><b>Project 1: Smart Farm</b></h2>
+        <div class="w3-row-padding w3-border-bottom w3-border-black w3-padding-16">
+          <div class="w3-col l3 m6">
+            <img class="w3-image" src="Smart Farm.jpg" alt="Smart Farm">
+          </div>
+          <div class="w3-col l9 m6">
+            <p class="w3-large">This project aims at coming up with a system that can detect the moisture content in the soil. It pumps water to the soil when the moisture level falls below a certain level, and stops the pumping of water when it goes above a certain level.</p>
+            <p class="w3-large"> Important components used in this project are:</p>
+            <ol class="w3-large w3-text-teal">
+              <li>Arduino Mega</li>
+              <li>Amphibious submerssible water pump</li>
+              <li>Soil Moisure sensor</li>
+            </ol>
+            <p class="w3-large">The link for the gitHub repository is provided below:</p>
+            <P class="w3-text-blue">
+              <a href="https://github.com/JToo13/SMART-FARM-IRRIGATION-SYSTEM">Repo</a>
+            </p>
+            <p class="w3-large">The video demonstration link is also provided below:</p>
+            <p class="w3-text-blue">
+              <a href="https://drive.google.com/file/d/1i_B6suCJYuDtgWgZ90JFbs0dL4wBuxql/view?usp=sharing">Video</a>
+            </p>
+          </div>
+        </div>
+    </div>
+
+    <div>
+      <h2 class="w3-border-bottom w3-border-grey w3-padding"><b>Project 2: Automated Fire Extinguisher</b></h2>
+      <div class="w3-row-padding w3-border-bottom w3-border-black w3-padding-16">
+          <div class="w3-col l3 m6">
+            <img class="w3-image" src="Automated Fire Extinguisher.jpg" alt="Automated Fire Extinguisher">
+          </div>
+          <div class="w3-col l9 m6">
+            <p class="w3-large">This project is a scale-down of a system that can be used to extinguish fires be it in a house or in large organisations. Upon the detection of a flame or extreme heat, a fan is turned on and sucks air from in and around the fire, thus extingushing it.</p>
+            <p class="w3-large"> The important components used include:</p>
+            <ol class="w3-large w3-text-teal">
+              <li>Arduino Mega</li>
+              <li>L9110 Fan Module</li>
+              <li>Flame Sensor</li>
+            </ol>
+            <p class="w3-large">The link for the gitHub repository is provided below:</p>
+            <p class="w3-text-blue">
+              <a href="https://github.com/Ci-Daniels/AUTOMATIC-FIRE-EXTINGUISHER">Repo</a>
+            </p>
+            <p class="w3-large">The video demonstration link is also provided below:</p>
+            <p class="w3-text-blue">
+              <a href="https://drive.google.com/file/d/1NavmBKP-aA5CorhwVzPW0TGesyhtOtiC/view?usp=sharing">Video</a>
+            </p>
+          </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="w3-border-bottom w3-border-grey w3-padding"><b>Project 3: Home Automation</b></h2>
+      <div class="w3-row-padding w3-border-bottom w3-border-black w3-padding-16">
+        <div class="w3-col l3 m6">
+          <img class="w3-image" src="Home Automation.jpg" alt="Home Automation">
+        </div>
+        <div class="w3-col l9 m6">
+          <p class="w3-large">This project aims to automate important systems in the house, and in this case, lighting and temperature regulation. In temperature regulation, when the temperature around the house goes above a preset temperature, say 30 degrees Celcius, a fan turns on, cools the room till it falls to or below the preset temperature. In the lighting system, the switching on and off of the bulbs around the huse can be controlled by certain gestures, such as clapping of hands.</p>
+          <p class="w3-large"> The important components used in the lighting system include:</p>
+          <ol class="w3-large w3-text-teal">
+            <li>Arduino Mega</li>
+            <li>Big Sound Sensor</li>
+            <li>LED bulb</li>
+          </ol>
+          <p class="w3-large"> The important components used in the temperature regulation system include:</p>
+          <ol class="w3-large w3-text-teal">
+            <li>Arduino Mega</li>
+            <li>DHT11 Temperature and Humidity Sensor</li>
+            <li>DC Motor</li>
+          </ol>
+          <p class="w3-large">The link for the gitHub repository is provided below:</p>
+          <p class="w3-text-blue">
+            <a href="https://github.com/Ci-Daniels/HOME-AUTOMATION">Repo</a>
+          </p>
+          <p class="w3-large">The video demonstration link is also provided below:</p>
+          <p class="w3-text-blue">
+            <a href="https://drive.google.com/file/d/1m10JUUbGlN2WMQoN3t3_S1Z-gN_ME8ZU/view?usp=sharing">Video</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="w3-border-bottom w3-border-grey w3-padding"><b>Project 4: Smart Security System</b></h2>
+      <div class="w3-row-padding w3-border-bottom w3-border-black w3-padding-16">
+        <div class="w3-col l3 m6">
+          <img class="w3-image" src="Smart Security System 2.jpg" alt="Smart Security System">
+        </div>
+        <div class="w3-col l9 m6">
+          <p class="w3-large">This project mainly focuses on the security in and around the house, and could be used for effective detection of trespassers. A sensor is used in the detection of movement, and relays the message to a phone that alerts the owner that a motion has been detected around the house.</p>
+          <p class="w3-large"> The important components used include:</p>
+          <ol class="w3-large w3-text-teal">
+            <li>Esp 8266 NodeMCU</li>
+            <li>PIR Sensor</li>
+            <li>A telegram bot that relays the telegram message to your phone</li>
+          </ol>
+          <p class="w3-large">The link for the gitHub repository is provided below:</p>
+          <p class="w3-text-blue">
+            <a href="https://github.com/Samuel14-Muga/SMART-SECURITY-SYSTEM">Repo</a>
+          </p>
+          <p class="w3-large">The video demonstration link is also provided below:</p>
+          <p class="w3-text-blue">
+            <a href="https://drive.google.com/file/d/18LeHX-FfWnN5jx12v9QxYlVekHNrEAiH/view?usp=sharing">Video</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="w3-border-bottom w3-border-grey w3-padding"><b>Project 5: Automated Door Lock</b></h2>
+      <div class="w3-row-padding w3-border-bottom w3-border-black w3-padding-16">
+        <div class="w3-col l3 m6">
+          <img class="w3-image" src="Smart Door Lock.jpg" alt="Automated Door Lock">
+        </div>
+        <div class="w3-col l9 m6">
+          <p class="w3-large">This project aims at controlling the locking and unlocking of a door through automation. Through the use of an authorized keycard, a person can be able to gain automatic access to a building. The door remains locked in the presence of an unauthourized keycard, or a lack thereof. </p>
+          <p class="w3-large"> The important components used include:</p>
+          <ol class="w3-large w3-text-teal">
+            <li>Esp 8266 NodeMCU</li>
+            <li>RFID</li>
+            <li>Servo Motors</li>
+            <li>LED bulbs</li>
+            <li>Blynk App</li>
+          </ol>
+          <p class="w3-large">The link for the gitHub repository is provided below:</p>
+          <p class="w3-text-blue">
+            <a href="#">Repo</a>
+          </p>
+          <p class="w3-large">The video demonstration link is also provided below:</p>
+          <p class="w3-text-blue">
+            <a href="https://drive.google.com/file/d/1GHRSLXf9C7ts3d-5coQC-zixt4CngJqX/view?usp=sharing">Video</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="w3-border-bottom w3-border-grey w3-padding"><b>Project 6: Smart Attendance System</b></h2>
+      <div class="w3-row-padding w3-border-bottom w3-border-black w3-padding-16">
+        <div class="w3-col l3 m6">
+          <img class="w3-image" src="Smart Attendance System 2.jpg" alt="Smart Attendance System">
+        </div>
+        <div class="w3-col l9 m6">
+          <p class="w3-large">This is a mini-project demonstration of an automated recording of attendance, which could be applied to large organisations and companies which employ staff in the thousands, or large learning institutions such as universities.</p>
+          <p class="w3-large"> The important components used include:</p>
+          <ol class="w3-large w3-text-teal">
+            <li>Esp 8266 NodeMCU</li>
+            <li>RFID</li>
+            <li>XAMPP Database Software</li>
+          </ol>
+          <p class="w3-large">The link for the gitHub repository is provided below:</p>
+          <p class="w3-text-blue">
+            <a href="https://github.com/Ci-Daniels/SMART-ATTENDANCE-SYSTEM">Repo</a>
+          </p>
+          <p class="w3-large">The video demonstration link is also provided below:</p>
+          <p class="w3-text-blue">
+            <a href="https://drive.google.com/file/d/1Tgeiy8GzpimQ1cMus0MK8JyhqVz3hkLf/view?usp=sharing">Video</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="w3-border-bottom w3-border-grey w3-padding"><b>Project 7: How To MQtt Series</b></h2>
+        <div class="w3-row-padding w3-border-bottom w3-border-black w3-padding-16">
+        <div class="w3-col l3 m6">
+          <img class="w3-image" src="How to MQtt series.jpg" alt="How To MQtt Series">
+        </div>
+        <div class="w3-col l9 m6">
+          <p class="w3-large">This is a mini-project demonstration of another lighting sysytem, whereby the bulbs in the house can be switched on and off by publishing commands into an MQtt broker. This can be used in the effecticve remote control of lights.</p>
+          <p class="w3-large"> The important components used include:</p>
+          <ol class="w3-large w3-text-teal">
+            <li>Esp 8266 NodeMCU</li>
+            <li>MQtt Software</li>
+            <li>LED bulb</li>
+          </ol>
+          <p class="w3-large">The link for the gitHub repository is provided below:</p>
+          <p class="w3-text-blue">
+            <a href="https://github.com/JToo13/How-to-MQTT-series">Repo</a>
+          </p>
+          <p class="w3-large">The video demonstration link is also provided below:</p>
+          <p class="w3-text-blue">
+            <a href="https://drive.google.com/file/d/169Z5vO2z0gBwQrZlPLq10ZYSGPsx7t-F/view?usp=sharing">Video</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="w3-border-bottom w3-border-grey w3-padding"><b>Project 8: NodeMCU in Access Point(AP) and Station(STA) Modes</b></h2>
+      <div class="w3-row-padding w3-border-bottom w3-border-black w3-padding-16">
+        <div class="w3-col l3 m6">
+          <img class="w3-image" src="STA and AP mode.jpg" alt="STA and AP mode">
+        </div>
+        <div class="w3-col l9 m6">
+          <p class="w3-large">This project demonstrated how the NodeMCU could be programmed into two modes, the AP mode, where it sets up its own WiFi network and acts as a hub for network connectivity, and the STA mode, whereby the NodeMCU connects to an already set up WiFi network.</p>
+          <p class="w3-large"> The important components used include:</p>
+          <ol class="w3-large w3-text-teal">
+            <li>Esp 8266 NodeMCU</li>
+            <li>Push Button</li>
+            <li>LED bulb</li>
+          </ol>
+          <p class="w3-large">The link for the gitHub repository is provided below:</p>
+          <p class="w3-text-blue">
+            <a href="https://github.com/Samuel14-Muga/NODEMCU-IN-AP-AND-STA-MODE">Repo</a>
+          </p>
+          <p class="w3-large">The video demonstration link is also provided below:</p>
+          <p class="w3-text-blue">
+            <a href="https://drive.google.com/file/d/1m0FHK8PLhprXZjKTBKJtgadr--Qy9Qxz/view?usp=sharing">Video</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="w3-border-bottom w3-border-grey w3-padding"><b>Research Topics</b></h2>
+      <p class="w3-large">This section contains all the research that I have done while at Gearbox Kenya, mainly on the Internet of Things(IoT) and its applications.</p>
+      <p class="w3-large">The research topics are listed below and are links to the documentation:</p>
+      <ol class="w3-large w3-text-blue">
+        <li>
+          <a href="https://docs.google.com/document/d/1kKwqs5CPxXnrOQxe31SVurU7puTW8bIcyCcRGHTszoI/edit?usp=sharing"><b>The Wireless Technologies in The IoT</b></a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/document/d/1PQYg7ybuQp7ejRFMRP0O4ETGWbPqEVOYY-UWRJkf-LE/edit?usp=sharing"><b>The Impact of IoT on The Welder</b></a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/document/d/1PzN15IZ8fOkYQiZBBJqBJyIlmaI7mWFctZxutqxGx_o/edit?usp=sharing"><b>The Role of 3D Printing on the IoT</b></a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/document/d/17UWa87eyx9FleGFrr9kaGU1gIS_4rbHhJX4r9o3VvmU/edit?usp=sharing"><b>Application of IoT in Smart Grid</b></a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/document/d/1l4OqWQ5_pQIjLScShfv6IVVKPUsdylgfKiaxTapcyhU/edit?usp=sharing"><b>Performing Risk Analysis of IoT Devices</b></a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/document/d/18zFArZuK4w59Rtk9VmDqQDJSRu1U7xsWTlzZocByp04/edit?usp=sharing"><b>MQtt and its Role in IoT Architecture</b></a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/document/d/1UsYNbCiy2jN4n7SuIfrOVrGDcHVbkTk8RD480252Glk/edit?usp=sharing"><b>Impact of IoT in Logistics and Retail Industry</b></a>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  
+  <!-- Footer Section -->
+  <footer class="w3-center w3-light-grey">
+    <p class="w3-text-black"><b>Powered by the great Samuel Muga</b></p>
+  </footer>
+</body>
+</html>
